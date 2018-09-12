@@ -6,75 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Front-End Dev Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet" >
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="header">
-      <div class="header_div">
-        <img class="logo" src="images/logohtml.png" alt="Logo with markup language"/>
-        <div class="header-text">
           <h1 class="title">Frontend development</h1>
-          <h3 class="subtitle">Lorem ipsum dolor sit amet</h3>
-        </div>
-        </div>
+          <nav>
+            <a class="fa fa-github" href="https://github.com/mechaphysis"></a>
+            <a class="fa fa-linkedin" href="https://linkedin.com/in/esperanza-natalia"></a>
+            <a class="fa fa-twitter" href="https://twitter.com/mechaphysis"></a>
+          </nav>
       </header>
     <hr class="horizontal-bar">
     <main>
       <section class="content">
-        <div class="main-picture">
-          <img class="image-html" srcset="images/htmlcode-412w.jpg 412w,
-                                          images/htmlcode-768w.jpg 768w,
-                                          images/htmlcode-815w.jpg 815w"
-                                  sizes="(max-width: 412px) 412px,
-                                         (max-width: 768px) 768px,
-                                         815px"
-                                  src="images/htmlcode-815w.jpg" alt="front-end workspace"/>
-        </div>
-        <div class="featured-work">
-          <h2 class="featured-tittle">Featured Work</h2>
+        <div class="projects">
+          <h2 class="featured-tittle">Featured Projects</h2>
           <ul>
-            <li class="work-appify">
-              <img class="work-picture" srcset="images/thumbnails/appify-260w.jpg 260w,
-                                                images/thumbnails/appify-520w.jpg 520w"
-                                        sizes="(max-width: 412px) 260px,
-                                               520px"
-                                        src="images/thumbnails/appify-520w.jpg" alt="picture of different apps"/>
+            <li class="memory-game">
+              <img class="work-picture" src="img/memoryGame.png" alt="picture of the memory game deck"/>
               <div class="work-text">
-                <h2>APPIFY</h2>
-                <a href="#">https://www.github.com/placeholder/project1</a>
+                <h2>Memory Game</h2>
+                <a href="#">https://github.com/mechaphysis/frontend-memory-game</a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel congue tortor, at convallis tellus.
+                  A version of the very well known "Concentration Game" developed with vanilla JS, CSS and HTML.
                 </p>
               </div>
             </li>
 
-            <li class="work-sunflow">
-              <img class="work-picture" srcset="images/thumbnails/sunflower-260w.jpg 260w,
-                                                images/thumbnails/sunflower-520w.jpg 520w"
-                                        sizes="(max-width: 412px) 260px,
-                                               520px"
-              src="images/thumbnails/sunflower-520w.jpg" alt="macro picture of sunflower seeds"/>
+            <li class="book-tracking">
+              <img class="work-picture" src="img/myReads.png" alt="picture of a book tracking app"/>
               <div class="work-text">
-                <h2>SUNFLOW</h2>
-                <a href="#">https://www.github.com/placeholder/project2</a>
+                <h2>MyReads: book tracking App</h2>
+                <a href="#">https://github.com/mechaphysis/fend-project-myreads-react-app</a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel congue tortor, at convallis tellus.
+                  A book tracking App developed using React.
                 </p>
               </div>
             </li>
 
-            <li class="work-bokeh">
-              <img class="work-picture" srcset="images/thumbnails/bokeh-260w.jpg 260w,
-                                                images/thumbnails/bokeh-520w.jpg 520w"
-                                        sizes="(max-width: 412px) 260px,
-                                               520px"
-              src="images/thumbnails/bokeh-520w.jpg" alt="picture of lights with bokeh (blurred) effect"/>
+            <li class="local-map">
+              <img class="work-picture" src="img/p8-react.png" alt="picture of maps application"/>
               <div class="work-text">
-                <h2>BOKEH</h2>
-                <a href="#">https://www.github.com/placeholder/project3</a>
+                <h2>Local Sightseeing Map</h2>
+                <a href="#">https://github.com/mechaphysis/fend-project-neightborhood-map-react</a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel congue tortor, at convallis tellus.
-                </p>
+                  A Web App for a local sightseeing map built from scratch using React, Google API and FourSquare API.
               </div>
             </li>
           </ul>
