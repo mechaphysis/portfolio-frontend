@@ -1,28 +1,135 @@
-$font:   'Coda';
+$font:   'Montserrat';
 //color palette
 $primary-color: #223843;
-$font-color: #EFF1F3;
-$second-color: #DBD3D8;
-$third-color: #D8B4A0 ;
-$fourth-color: #D77A61;
+$second-color: #7d97ad;
 
 body {
-  font: $font;
-  color: $font-color;
-  background-color: $primary-color;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: 300 16px $font;
+  color: $primary-color;
 }
 
-header {
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.header_div,.content {
   display: flex;
   flex-wrap: wrap;
-  nav {
-    a {
-      font-size: 100px;
+}
+
+.header_div,.featured-work,ul {
+  width: 100%;
+}
+
+.header_div {
+  padding-top: 0.5em;
+
+  .logo {
+    height: 4em;
+    margin-top: 6px;
+    margin-right: auto;
+    padding-left: 0.5em;
+  }
+
+  .header-text {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    padding-right: 0.5em;
+    text-align: right;
+    vertical-align: bottom;
+
+    .title {
+      font-weight: 300;
+      color: $second-color;
+    }
+
+    .subtitle {
+      font-weight: 500;
     }
   }
 
 }
 
-horizontal-bar {
-  color: $fourth-color;
+.horizontal-bar {
+  border-style: solid;
+  border-width: thin ;
+  color: $second-color;
 }
+
+.featured-tittle {
+  text-align: justify;
+  color: $second-color;
+  font-weight: 500;
+  padding-left: 0.2em;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: 31%;
+    margin: auto;
+  }
+}
+
+.work-text {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  p,a {
+    font-size: 0.7em;
+    max-height: 56px;
+    padding-bottom: 0;
+    overflow-y: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: $second-color;
+  }
+}
+
+.work-picture {
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7em;
+    padding-bottom: 10px;
+}
+
+// Media queries for responsiveness
+  @media screen and (max-width:407px) {
+    .title,.subtitle {
+      font-size: 1.5em;
+    }
+
+    .logo {
+      height: 3em;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .work-text > h2 {
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width:815px) {
+    .header_div,.content,.horizontal-bar {
+      width: 815px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
