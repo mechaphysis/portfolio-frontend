@@ -1,0 +1,28 @@
+$font:   'Coda';
+//color palette
+$primary-color: #223843;
+$font-color: #EFF1F3;
+$second-color: #DBD3D8;
+$third-color: #D8B4A0 ;
+$fourth-color: #D77A61;
+
+body {
+  font: $font;
+  color: $font-color;
+  background-color: $primary-color;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  nav {
+    a {
+      font-size: 100px;
+    }
+  }
+
+}
+
+horizontal-bar {
+  color: $fourth-color;
+}
